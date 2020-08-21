@@ -12,7 +12,7 @@ class GradoController extends Controller
     public function index()
     {
         $grados = Grado::all();
-        return view('grado.index', compact($grados));
+        return view('grado.index', ['grados' => $grados]);
     }
 
     public function create(Request $request)
