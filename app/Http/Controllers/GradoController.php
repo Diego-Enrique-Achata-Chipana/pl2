@@ -26,9 +26,9 @@ class GradoController extends Controller
         
     }
 
-    public function edit()
+    public function edit($id)
     {
-        $grado = DB::table('users');
+        $grado = Grado::whereId($id);
         return $grado;
     }
 }
