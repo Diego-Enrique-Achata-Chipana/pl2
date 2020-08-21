@@ -29,5 +29,6 @@ class GradoController extends Controller
     public function edit()
     {
         $grado = DB::table('users');
+        return $grado;
     }
 }
